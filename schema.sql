@@ -10,5 +10,5 @@ CREATE TABLE discounts (
 INSERT INTO discounts (`option`, booking_duration, discount)
 VALUES
   (1, 'Monthly', 0.05),
-  (2, 'Half Yearly', 0.1),
-  (3, 'Yearly', 0.2);
+  (6, 'Half Yearly', 0.1),
+  (12, 'Yearly', 0.2);

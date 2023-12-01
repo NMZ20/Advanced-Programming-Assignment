@@ -25,9 +25,9 @@ public class client {
 
             while (true) {
                 System.out.println("==========================");
-                System.out.println("1.        1 Month");
-                System.out.println("2.        2 Months");
-                System.out.println("3.        3 Months");
+                System.out.println("1.        Monthly");
+                System.out.println("2.        Half Yearly");
+                System.out.println("3.        Yearly");
                 System.out.println("q to terminate the program.");
                 System.out.println("==========================");
                 System.out.println();
@@ -42,7 +42,8 @@ public class client {
                     continue;
                 }
 
-                if (option == "q") {
+                if (option.equals("q")) {
+                    System.out.println("Terminating...");
                     outputStream.writeUTF(option);
                     socket.close();
                     break;
