@@ -1,2 +1,4 @@
-server.class
+ServerThread.class
+ClientThread.class
 client.class
+server.class
