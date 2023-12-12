@@ -42,7 +42,6 @@ public class ServerThread extends Thread {
                     System.out.println("Server is terminating...");
                     break;
                 }
-
                 //Print the recieved option
                 System.out.println("Recieved option number: " + value);
 
@@ -85,8 +84,10 @@ public class ServerThread extends Thread {
                 System.out.println();
             }
             
-            
-            
+            // Flush the output stream
+            outputStream.flush();
+            // Close input stream
+            inputStream.close();
             // Close db connection
             con.close();
             // Close socket connection
